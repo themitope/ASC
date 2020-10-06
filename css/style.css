@@ -1,0 +1,123 @@
+body{
+  overflow-x: hidden;
+}
+
+.head_text{
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 47px;
+display: flex;
+align-items: flex-end;
+color: #FFFFFF;
+padding:8px 17px;
+}
+.input{
+	background-color: #576071;
+	color: white; 
+
+}
+
+.card {
+  box-shadow: 2px 5px 10px #888888;
+}
+
+#assignment{
+  display: none;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #414550;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 15px 8px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color:#FFFFFF;
+  display: block;
+  font-weight: 300;
+}
+.label{
+  color: #047940;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.active{
+	background-color: #576071;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+    display: none;
+  }
+  .sidebar a {font-size: 18px;}
+  .content {margin-left: 0;}
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #047940;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.content {
+	margin-left: 180px;
+}
+table.table-hover{
+    border:1px solid #000000;
+    margin-top:20px;
+  }
+  table.table-hover > tbody > tr > td{
+    border:1px solid #000000;
+}
+.progress {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.progress-bar {
+  background-color: #FF0000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
